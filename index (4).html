@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dori Rental Cars | Makina me Qira</title>
+  <meta name="description" content="Dori Rental Cars ofron makina me qira në një stil luxury dark, me rezervim të shpejtë, çmime të qarta dhe mbështetje profesionale." />
+  <meta name="keywords" content="makina me qira, rental cars, Dori Rental Cars, makina me qera, Albania" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta property="og:title" content="Dori Rental Cars" />
+  <meta property="og:description" content="Makina me qira, dizajn premium, rezervim i shpejtë dhe contact profesional." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow-a"></div>
+  <div class="page-glow page-glow-b"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Dori Rental Cars home">
+        <img src="assets/logo.svg" alt="Dori Rental Cars" class="brand-mark" />
+        <span class="brand-text">
+          <strong>Dori</strong>
+          <small>Rental Cars</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Hap menunë</span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Navigimi kryesor">
+        <a href="#home">Home</a>
+        <a href="#about">Rreth Nesh</a>
+        <a href="#fleet">Makinat</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Kontakt</a>
+        <a class="cta cta-outline" href="tel:+355688808888">+355 68 880 8888</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Luxury Dark Theme • Makina të përzgjedhura</span>
+          <h1>Makina me qira të pastra, elegante dhe gati për çdo udhëtim.</h1>
+          <p>
+            Dori Rental Cars kombinon stil premium, çmime të qarta dhe një proces rezervimi të thjeshtë.
+            Zgjidh makinën tënde, dërgo kërkesën dhe ne kujdesemi për pjesën tjetër.
+          </p>
+
+          <div class="hero-actions">
+            <a class="cta" href="#fleet">Shiko Makinat</a>
+            <a class="cta cta-secondary" href="#contact">Rezervo Tani</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Statistikat kryesore">
+            <div><strong>8</strong><span>makina në flotë</span></div>
+            <div><strong>24/7</strong><span>kontakt dhe asistencë</span></div>
+            <div><strong>Luxury</strong><span>prezantim premium</span></div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-panel-top">
+            <span class="panel-badge">Rezervim i shpejtë</span>
+            <span class="panel-chip">Netlify Forms gati</span>
+          </div>
+          <div class="featured-photo">
+            <img src="assets/cars/mercedes-e-class-2010.jpg" alt="Mercedes-Benz E Class 2010" />
+          </div>
+          <div class="hero-panel-bottom">
+            <div>
+              <p class="panel-label">Telefon</p>
+              <a href="tel:+355688808888">+355 68 880 8888</a>
+            </div>
+            <div>
+              <p class="panel-label">Lokacioni</p>
+              <a href="https://maps.app.goo.gl/4mUzPFfuKfAoUHKYA" target="_blank" rel="noopener noreferrer">Shiko në hartë</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad section-alt">
+      <div class="container split-grid reveal">
+        <div>
+          <span class="eyebrow">Rreth Nesh</span>
+          <h2>Një brand i ndërtuar për besim, komoditet dhe stil.</h2>
+        </div>
+        <div class="text-card">
+          <p>
+            Dori Rental Cars u krijua për klientët që kërkojnë një eksperiencë profesionale nga fillimi deri në dorëzim.
+            Flota jonë përfshin makina të mirëmbajtura, me fotografi reale, çmime të dukshme dhe komunikim të shpejtë.
+          </p>
+          <p>
+            Misioni ynë është të ofrojmë qira të thjeshtë, të sigurt dhe me standard vizual premium, në mënyrë që çdo klient
+            të ndihet i sigurt dhe i trajtuar me kujdes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fleet" class="section-pad">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Produktet / Shërbimet</span>
+            <h2>Flota aktuale e disponueshme</h2>
+          </div>
+          <p class="section-lead">Përdor kërkimin për të gjetur shpejt modelin, vitin ose transmisionin që të duhet.</p>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box" for="searchCars">
+            <span>Kërko</span>
+            <input id="searchCars" type="search" placeholder="Shkruaj p.sh. Golf, Mercedes, automat, naftë..." />
+          </label>
+          <div class="results-meta" id="resultsMeta">8 makina të disponueshme</div>
+        </div>
+
+        <div id="fleetGrid" class="fleet-grid" aria-live="polite"></div>
+        <div id="noResults" class="no-results hidden">
+          Nuk u gjet asnjë makinë për këtë kërkim.
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section-pad section-alt">
+      <div class="container reveal">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Dëshmi / Reviews</span>
+            <h2>Përshtypje nga klientët</h2>
+          </div>
+          <p class="section-lead">Kartat më poshtë janë shembuj dizajni; mund t’i zëvendësosh me vlerësimet reale të klientëve.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>Shërbim i shpejtë, komunikim shumë i mirë dhe makina e pastër në çdo detaj.</p>
+            <span>Klient i kënaqur</span>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>Proces rezervimi i thjeshtë dhe çmim i qartë. E mora makinën pa asnjë vonesë.</p>
+            <span>Klient i verifikuar</span>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>Layout premium dhe standard i lartë. Makinat duken shumë mirë edhe live.</p>
+            <span>Përshtypje pozitive</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad">
+      <div class="container contact-grid reveal">
+        <div class="contact-copy">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Na dërgo kërkesën për rezervim.</h2>
+          <p>
+            Plotëso formularin dhe rezervimi i dërgohet direkt ekipit të Dori Rental Cars.
+            Netlify Forms është i konfiguruar për të kapur submission-et dhe emailin <strong>dorirentalcars@gmail.com</strong>.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <strong>Telefon</strong>
+              <a href="tel:+355688808888">+355 68 880 8888</a>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:dorirentalcars@gmail.com">dorirentalcars@gmail.com</a>
+            </div>
+            <div>
+              <strong>Lokacioni</strong>
+              <a href="https://maps.app.goo.gl/4mUzPFfuKfAoUHKYA" target="_blank" rel="noopener noreferrer">Hap hartën</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="reservation" />
+          <p class="hidden">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+          <div class="form-grid">
+            <label>
+              Emri dhe Mbiemri
+              <input type="text" name="name" placeholder="Shkruaj emrin tënd" required />
+            </label>
+            <label>
+              Numri i telefonit
+              <input type="tel" name="phone" placeholder="+355..." required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="email@example.com" required />
+            </label>
+            <label>
+              Makina
+              <select name="car" id="carSelect" required>
+                <option value="">Zgjidh makinën</option>
+                <option>Mercedes-Benz E Class 2010</option>
+                <option>Jeep Cherokee 2015</option>
+                <option>BMW Seria 5 2010</option>
+                <option>Volkswagen Golf 7</option>
+                <option>Volkswagen Golf 6 2009</option>
+                <option>Mercedes-Benz C Class 2005</option>
+                <option>Mercedes-Benz E Class 2005</option>
+                <option>Mini Cooper 2004</option>
+              </select>
+            </label>
+            <label>
+              Data e marrjes
+              <input type="date" name="pickup_date" required />
+            </label>
+            <label>
+              Data e kthimit
+              <input type="date" name="return_date" required />
+            </label>
+            <label class="full-width">
+              Vend marrje / shënime
+              <input type="text" name="pickup_location" placeholder="P.sh. Tiranë, aeroport, ose lokacion tjetër" />
+            </label>
+            <label class="full-width">
+              Mesazhi
+              <textarea name="message" rows="5" placeholder="Shkruaj çdo detaj tjetër që të duhet."></textarea>
+            </label>
+          </div>
+          <button type="submit" class="cta cta-full">Dërgo rezervimin</button>
+          <p class="form-note">Pasi të dërgohet forma, rezervimi ruhet në Netlify dhe mund të njoftohet në emailin e biznesit.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <img src="assets/logo.svg" alt="Dori Rental Cars" class="brand-mark" />
+          <span class="brand-text">
+            <strong>Dori</strong>
+            <small>Rental Cars</small>
+          </span>
+        </a>
+        <p>Makina me qira me prezantim premium, komunikim të shpejtë dhe përvojë të pastër përdorimi.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li><a href="tel:+355688808888">+355 68 880 8888</a></li>
+          <li><a href="mailto:dorirentalcars@gmail.com">dorirentalcars@gmail.com</a></li>
+          <li><a href="https://maps.app.goo.gl/4mUzPFfuKfAoUHKYA" target="_blank" rel="noopener noreferrer">Lokacioni në hartë</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Linke ligjore</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hidden"><label>Do not fill: <input name="bot-field" /></label></p>
+          <input type="email" name="email" placeholder="Emaili yt" required />
+          <button type="submit">Abonohu</button>
+        </form>
+        <p class="footer-note">Rrjete sociale: Instagram • Facebook • WhatsApp</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Dori Rental Cars. Të gjitha të drejtat e rezervuara.</span>
+      <a href="#home">Kthehu lart</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
